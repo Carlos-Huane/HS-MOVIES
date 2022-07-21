@@ -2,8 +2,14 @@
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    
     height: 553px;
+
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+    padding : 5rem auto 6rem;
+    
 
 }
 
@@ -12,8 +18,8 @@
 
 .card {
     --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
-    width: 190px;
-    height: 254px;
+    width: 240px;
+    height: 280px;
     padding: 5px;
     border-radius: 1rem;
     overflow: visible;
@@ -21,6 +27,7 @@
     background: var(--background);
     position: relative;
     z-index: 1;
+    margin: 1rem;
    }
    
    .card::after {
