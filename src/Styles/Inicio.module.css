@@ -3,23 +3,20 @@
     display: flex;
     flex-wrap: wrap;
     
-    height: 553px;
+    height: 1200px;
 
     display: flex;
     flex-direction: row;
    justify-content: space-around;
-    padding : 5rem auto 6rem;
+    
     
 
 }
 
-
-
-
 .card {
-    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
-    width: 240px;
-    height: 280px;
+    --background: linear-gradient(to left, #ffffff 0%, #070707 100%);
+    width: 280px;
+    height: 340px;
     padding: 5px;
     border-radius: 1rem;
     overflow: visible;
@@ -27,7 +24,7 @@
     background: var(--background);
     position: relative;
     z-index: 1;
-    margin: 1rem;
+    margin: auto ;
    }
    
    .card::after {
@@ -41,15 +38,17 @@
     width: 100%;
     transform: scale(0.8);
     filter: blur(25px);
-    background: #f7ba2b;
+    background: #000000;
     background: var(--background);
     transition: opacity .5s;
    }
    
    .cardInfo {
-    --color: #181818;
-    background: var(--color);
-    color: var(--color);
+    
+    background-repeat: no-repeat;
+     background-position: center center;
+    background-size: cover; 
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,11 +56,14 @@
     height: 100%;
     overflow: visible;
     border-radius: .7rem;
-   }
+    
+    }
+    
    
    .card .title {
     font-weight: bold;
     letter-spacing: .1em;
+    text-align: center;
    }
    
    /*Hover*/
@@ -72,5 +74,27 @@
    .card:hover .cardInfo {
     color: #f7ba2b;
     transition: color 1s;
+   }
+   
+   .title {
+    color: transparent;
+    
+   }
+      
+   .card:hover {
+    color:red
+   }
+   .cardInfo:hover {
+    Background-color: transparent;
+    filter:alpha(opacity=70);
+
+    -moz-opacity:.70;opacity:.70;
+
+   }
+   
+   .text {
+    color:white;
+    text-align: center;
+    margin: 0.5rem auto;
    }
    

@@ -8,12 +8,14 @@ const Inicio = ( )=> {
         <div className={Style.contenedor}>
             {state.map((movie)=>{
            return(
-            <div key={movie.imdbID} className= {Style.card}>
-                    <div className={Style.cardInfo}>
-                        <p className={Style.title}>{movie.Title}</p>
+            <div key={movie.imdbID} className= {Style.card} >
+                    <div className={Style.cardInfo} style={{backgroundImage:`url(${movie.Poster})`}}>
+                        <h2 className={Style.title}>More Information</h2>
                     </div>
-              {/* <NavLink to={`/movie/${movie.imdbID}`}> <h3>{movie.Title}</h3> </NavLink> */}
-
+              <NavLink to={`/movie/${movie.imdbID}`} className={Style.text}> <h3>{movie.Title}</h3> </NavLink> 
+                    
+                    {/* <h2 className={Style.text}>{movie.Title}</h2> */}
+                    
               {/* <button onClick={() => this.props.addMovieFavorite({title: movie.Title, id: movie.imdbID})}>Fav</button> */}
             </div>
            )
