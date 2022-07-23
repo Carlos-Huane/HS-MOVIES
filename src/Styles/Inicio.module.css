@@ -98,3 +98,7 @@
     margin: 0.5rem auto;
    }
    
+   .titleFav {
+    display: flex;
+    justify-content: center;
+   }
