@@ -1,6 +1,7 @@
 import { GET_MOVIES } from "./ActionTypes.js";
 
 const apiKey = "a77f0041";
+
 export function addMovieFavorite(payload) {
   return { type: "ADD_MOVIE_FAVORITE", payload };
 } 
