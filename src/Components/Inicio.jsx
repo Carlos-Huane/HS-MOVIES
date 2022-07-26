@@ -13,9 +13,10 @@ const Inicio = ( )=> {
             {state.map((movie)=>{
            return(
             <div key={movie.imdbID} className= {Style.card} >
-                    <div className={Style.cardInfo} style={{backgroundImage:`url(${movie.Poster})`}}>
+                    <NavLink to={`/movie/${movie.imdbID}`}><div className={Style.cardInfo} style={{backgroundImage:`url(${movie.Poster})`}}>
                         <h2 className={Style.title}>More Information</h2>
                     </div>
+                    </NavLink>
             <div className={Style.titleFav}>
               <NavLink to={`/movie/${movie.imdbID}`} className={Style.text}> <h3>{movie.Title}</h3> </NavLink> 
               <button onClick={() => dispatch(addMovieFavorite({title:movie.Title, id:movie.imdbID, poster:movie.Poster}))  }>

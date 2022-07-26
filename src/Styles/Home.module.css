@@ -1,4 +1,8 @@
 .main {
-    height: 558px;
-    background-color: rgba(209, 166, 37, 0.085);    
+    background-image: url("../Images/17053-4k.jpg");
+    background-repeat: no-repeat;
+     background-position: center center;
+    background-size: cover; 
+    /* min-height: 77.34vh;    */
+    min-height: 100vh;
 }

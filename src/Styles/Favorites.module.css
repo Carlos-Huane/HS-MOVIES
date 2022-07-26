@@ -17,4 +17,24 @@
 
 .contenedorCard {
     display: flex;
+    margin: 2rem auto;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.favorites {
+    min-height: 77.34vh;
+    background-color: black;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text button {
+    background-color: transparent;
+
 }
