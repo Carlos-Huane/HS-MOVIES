@@ -69,7 +69,7 @@ const Header = () => {
                                 </button> */}
 
 
-                        <button type="submit" onClick={ () => dispatch(getMovies(input))}>
+                        <button type="submit" onClick={ () => dispatch(getMovies(input))} style={{backgroundColor:"transparent",border:"none"}}>
                        
                             <div className={Style.button}>
                                 <div className={Style.box}>S</div>
