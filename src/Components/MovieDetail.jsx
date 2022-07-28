@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import {getMovieDetail} from "../Redux/Actions.js";
 import { useDispatch, useSelector} from "react-redux/es/exports.js";
+import Style from "../Styles/MovieDetail.module.css"
 
 const MovieDetail = () => {
     const route = useParams();
@@ -11,18 +12,24 @@ const MovieDetail = () => {
         dispatch(getMovieDetail(route.movieDetail));
     },[])
     return (
-        <div className = {Style.card}>
-            <h1>{stateMovie.Title}</h1>
-            <img src={`${stateMovie.Poster}`} />  
-            <h2>Year: {stateMovie.Year}</h2>
-            <h3>Director: {stateMovie.Director}</h3>
-            <h3>Actors: {stateMovie.Actors}</h3>
-            <h3>Genre: {stateMovie.Genre}</h3>
-            <h3>Lenguage: {stateMovie.Language}</h3>
-            <h4>Description: {stateMovie.Plot}</h4> 
-            <h3>Type: {stateMovie.Type}</h3>
-            <h3>Runtime: {stateMovie.Runtime}</h3>
-            <h3>Rating: {stateMovie.imdbRating}</h3> 
+        <div>
+            
+            <div class="row" className = {Style.contenedor}>
+                <div class="col-lg-6" className= {Style.poster}>
+                    <img src={`${stateMovie.Poster}`} />
+                </div>  
+                <div class="col-lg-6" className = {Style.description}>
+                    <h2>Year: {stateMovie.Year}</h2>
+                    <h3>Director: {stateMovie.Director}</h3>
+                    <h3>Actors: {stateMovie.Actors}</h3>
+                    <h3>Genre: {stateMovie.Genre}</h3>
+                    <h3>Lenguage: {stateMovie.Language}</h3>
+                    <h3>Description: {stateMovie.Plot}</h3> 
+                    <h3>Type: {stateMovie.Type}</h3>
+                    <h3>Runtime: {stateMovie.Runtime}</h3>
+                    <h3>Rating: {stateMovie.imdbRating}</h3> 
+                </div> 
+            </div>
         </div>
     )
 }

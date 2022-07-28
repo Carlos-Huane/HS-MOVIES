@@ -9,4 +9,34 @@
    }
    
    
-   
+.contenedor {
+    background-image: url("../Images/plain-backdrop-decorative-gray-textured.jpg");
+    background-repeat: no-repeat;
+     background-position: center center;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    min-height: 90vh;
+    color: rgb(172, 201, 255);
+}
+.poster {
+    margin: 3.5rem ;
+}
+
+.description {
+    text-align: center;
+    margin: auto 1.0rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+    .contenedor{
+        flex-direction: row;
+    }
+    .contenedor {
+        text-align: left;
+    }
+    
+}

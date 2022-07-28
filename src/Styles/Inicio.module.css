@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     
-    min-height: 79.2vh;
+    min-height: 90vh;
 
     flex-direction: row;
    justify-content: space-around;
@@ -106,7 +106,8 @@
    }
 
    .defaultInicio {
-    padding-top: 200px;
+    
+    margin: auto 1rem;
     
    }
    .titleFav {

@@ -23,9 +23,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 .favorites {
-    min-height: 79.2vh;
+    min-height: 90vh;
     background-color: black;
 }
 .text {
@@ -107,7 +108,10 @@
   .default {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    margin: auto;
     padding-top: 5%;
+    
   }
   .defaultText {
     margin: 5rem auto;
