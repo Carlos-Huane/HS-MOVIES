@@ -7,8 +7,15 @@ import Style from "../Styles/Favorites.module.css"
     const dispatch = useDispatch();
      return(
          <div className= {Style.favorites}>
-             <h1>MY FAVORITES MOVIES</h1>
+             {!moviesFavourites && <h1>MY FAVORITES MOVIES</h1>}
+             
             <div className={Style.contenedor}>
+                {!moviesFavourites.length && 
+                    <div className = {Style.default}>
+                        <h1 className= {Style.defaultText}>Does not have any favorite movies added</h1>
+                        <div className= {Style.loader}></div>
+                    </div>
+                }
                 {moviesFavourites.map(e => {
                     return (
                         <div className={Style.contenedorCard} key={e.id}>

@@ -11,7 +11,7 @@ const MovieDetail = () => {
         dispatch(getMovieDetail(route.movieDetail));
     },[])
     return (
-        <div>
+        <div className = {Style.card}>
             <h1>{stateMovie.Title}</h1>
             <img src={`${stateMovie.Poster}`} />  
             <h2>Year: {stateMovie.Year}</h2>

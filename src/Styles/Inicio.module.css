@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     
-    min-height: 77.34vh;
+    min-height: 79.2vh;
 
     flex-direction: row;
    justify-content: space-around;
@@ -103,4 +103,12 @@
    }
    .titleFav button {
     background-color: transparent;
+   }
+
+   .defaultInicio {
+    padding-top: 200px;
+    
+   }
+   .titleFav {
+    padding-top: 12px;
    }
