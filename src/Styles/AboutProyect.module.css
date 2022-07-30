@@ -1,13 +1,16 @@
 .AboutProyect {
-    min-height: 80.4vh;
-    padding-top: 50px;
+    min-height: 90vh;
     text-align: center;
     background-image: url("../Images/about-proyect.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: rgb(236, 237, 255);
+    display: flex;
 }
 .AboutProyect h4:hover {
     color: white;
+}
+.information {
+    margin: auto;
 }

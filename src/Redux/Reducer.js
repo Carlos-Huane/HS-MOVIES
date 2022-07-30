@@ -17,10 +17,15 @@ const initialState = {
         }
     }
     if (action.type === GET_MOVIES) {
-        return {
-          ...state,
-          moviesLoaded: action.payload.Search
-        };
+        if(action.payload.Response==='True') {
+          return {
+            ...state,
+            moviesLoaded: action.payload.Search
+          };
+        } else {
+          alert("FILM NOT FOUND")
+        }
+        
     }
     
     if (action.type === REMOVE_MOVIE_FAVORITE){
