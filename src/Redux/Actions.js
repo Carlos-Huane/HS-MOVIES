@@ -1,6 +1,6 @@
 import { GET_MOVIES, GET_MOVIE_DETAIL, REMOVE_MOVIE_FAVORITE, ADD_MOVIE_FAVORITE } from "./ActionTypes.js";
 
- const API="41bb3635";
+ const API=process.env.REACT_APP_API;
 export function addMovieFavorite(payload) {
   return { type: ADD_MOVIE_FAVORITE, payload };
 } 
