@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/HS-MOVIES/static/css/main.34b5f8eb.css",
-    "main.js": "/HS-MOVIES/static/js/main.3a0edcb7.js",
+    "main.js": "/HS-MOVIES/static/js/main.7b60fdb4.js",
     "static/media/plain-backdrop-decorative-gray-textured.jpg": "/HS-MOVIES/static/media/plain-backdrop-decorative-gray-textured.f34f28c63ba78e5986d2.jpg",
     "static/media/about-proyect.jpg": "/HS-MOVIES/static/media/about-proyect.2775639bc857c4b711a5.jpg",
     "static/media/wallpaperflare.com_wallpaper2.jpg": "/HS-MOVIES/static/media/wallpaperflare.com_wallpaper2.043a1847346361a71fbe.jpg",
     "index.html": "/HS-MOVIES/index.html",
     "main.34b5f8eb.css.map": "/HS-MOVIES/static/css/main.34b5f8eb.css.map",
-    "main.3a0edcb7.js.map": "/HS-MOVIES/static/js/main.3a0edcb7.js.map"
+    "main.7b60fdb4.js.map": "/HS-MOVIES/static/js/main.7b60fdb4.js.map"
   },
   "entrypoints": [
     "static/css/main.34b5f8eb.css",
-    "static/js/main.3a0edcb7.js"
+    "static/js/main.7b60fdb4.js"
   ]
 }
