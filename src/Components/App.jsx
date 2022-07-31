@@ -16,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path = '/' element = {<Navigate to='/home' />} />
+        <Route path = '/HS-MOVIES' element = {<Navigate to='/home' />} />
         <Route path = '/home' element = {<Home />} />
         <Route path = '/inicio' element = {<Inicio />} />
         <Route path = '/favorites' element = {<Favorites />} />
