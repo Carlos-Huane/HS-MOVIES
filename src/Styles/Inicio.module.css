@@ -8,7 +8,7 @@
     flex-direction: row;
    justify-content: space-around;
     
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 
 }
 
@@ -100,10 +100,9 @@
    .titleFav {
     display: flex;
     justify-content: center;
+    align-items: center;
    }
-   .titleFav button {
-    background-color: transparent;
-   }
+
 
    .defaultInicio {
     
@@ -112,4 +111,8 @@
    }
    .titleFav {
     padding-top: 12px;
+   }
+   .buttonDiv:active {
+    box-shadow: none;
+  transform: translate(3px, 3px);
    }

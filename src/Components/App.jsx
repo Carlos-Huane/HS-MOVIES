@@ -15,13 +15,13 @@ function App() {
     <div className = {Style.app}>
       <Header />
       <Routes>
-        <Route path = '/' element = {<Navigate to='/home' />} />
-        <Route path = '/HS-MOVIES' element = {<Navigate to='/home' />} />
-        <Route path = '/home' element = {<Home />} />
-        <Route path = '/inicio' element = {<Inicio />} />
-        <Route path = '/favorites' element = {<Favorites />} />
-        <Route path = '/about-proyect' element = {<AboutProyect />} />
-        <Route path = '/movie/:movieDetail' element = {<MovieDetail />} />
+        <Route path = '/' element = {<Navigate to='/HS-MOVIES/home' />} />
+        <Route path = '/HS-MOVIES' element = {<Navigate to='/HS-MOVIES/home' />} />
+        <Route path = '/HS-MOVIES/home' element = {<Home />} />
+        <Route path = '/HS-MOVIES/inicio' element = {<Inicio />} />
+        <Route path = '/HS-MOVIES/favorites' element = {<Favorites />} />
+        <Route path = '/HS-MOVIES/about-proyect' element = {<AboutProyect />} />
+        <Route path = '/HS-MOVIES/movie/:movieDetail' element = {<MovieDetail />} />
       </Routes>
       <Footer />
     </div>

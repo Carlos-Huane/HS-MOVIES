@@ -6,9 +6,7 @@ import Style from "../Styles/Favorites.module.css"
     const moviesFavourites = useSelector(state => state.moviesFavourites);
     const dispatch = useDispatch();
      return(
-         <div className= {Style.favorites}>
-             {!moviesFavourites && <h1>MY FAVORITES MOVIES</h1>}
-             
+         <div className= {Style.favorites}> 
             <div className={Style.contenedor}>
                 {!moviesFavourites.length && 
                     <div className = {Style.default}>
@@ -20,7 +18,7 @@ import Style from "../Styles/Favorites.module.css"
                     return (
                         <div className={Style.contenedorCard} key={e.id}>
                             <div className={Style.text}> 
-                                <NavLink to={`/movie/${e.id}`}><h2 style={{writingMode:"vertical-rl"}}>{e.title}</h2> </NavLink>
+                                <NavLink to={`/HS-MOVIES/movie/${e.id}`}><h2 style={{writingMode:"vertical-rl"}}>{e.title}</h2> </NavLink>
                                 <button onClick = {() => dispatch(removeMovieFavorite(e.id))}>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -29,7 +27,7 @@ import Style from "../Styles/Favorites.module.css"
                                     </svg>
                                 </button>
                             </div>
-                            <NavLink to={`/movie/${e.id}`}><div  className={Style.card}   style={{backgroundImage:`url(${e.poster})`}}> </div> </NavLink> 
+                            <NavLink to={`/HS-MOVIES/movie/${e.id}`}><div  className={Style.card}   style={{backgroundImage:`url(${e.poster})`}}> </div> </NavLink> 
                                 
                             
                         </div>

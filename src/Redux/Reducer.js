@@ -11,9 +11,10 @@ const initialState = {
   
   function rootReducer(state = initialState, action) {
     if (action.type === ADD_MOVIE_FAVORITE) {
+        let hash = {};
         return {
           ...state,
-          moviesFavourites: state.moviesFavourites.concat(action.payload)
+          moviesFavourites: state.moviesFavourites.concat(action.payload).filter(o => hash[o.id] ? false : hash[o.id] = true)
         }
     }
     if (action.type === GET_MOVIES) {
