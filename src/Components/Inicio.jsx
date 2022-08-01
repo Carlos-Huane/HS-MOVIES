@@ -21,7 +21,7 @@ const Inicio = ( )=> {
                     </div>
                     </NavLink>
             <div className={Style.titleFav}>
-              <NavLink to={`/movie/${movie.imdbID}`} className={Style.text} > <h3>{movie.Title}</h3> </NavLink> 
+              <NavLink to={`/movie/${movie.imdbID}`} className={Style.text} > <h4>{movie.Title}</h4> </NavLink> 
               <button onClick={() => dispatch(addMovieFavorite({title:movie.Title, id:movie.imdbID, poster:movie.Poster}))  } style={{border:"none"}}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
