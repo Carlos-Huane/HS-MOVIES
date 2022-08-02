@@ -7,7 +7,7 @@ function Footer () {
         <div className="row  bg-black p-3 text-white" style={{textAlign:"center"}}>
 
             <div class="col-lg-4"><h4>© Copyright 2022 Carlos Huane</h4></div>
-            <div class="col-lg-4"><NavLink to = '/about-proyect'><h4>About The Proyect</h4></NavLink></div>
+            <div class="col-lg-4"><NavLink to = '/HS-MOVIES/about-proyect'><h4>About The Proyect</h4></NavLink></div>
             <div class="col-lg-4">
                 <div className="RedesSociales">
                     <a style={{fontSize:"1.4rem"}}> <h4 style={{display:"inline"}}>Social Networks</h4></a>  
